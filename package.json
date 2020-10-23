@@ -1,0 +1,31 @@
+{
+  "name": "expressreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "devdbsetup": "cross-env NODE_ENV=development node DB/makeSchemas.js",
+    "devseed": "cross-env NODE_ENV=development node DB/seedFile.js",
+    "dbsetup": "cross-env NODE_ENV=production node DB/makeSchemas.js",
+    "seed": "cross-env NODE_ENV=production node DB/seedFile.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.5",
+    "cross-env": "^7.0.2",
+    "morgan": "^1.10.0",
+    "objection": "^2.2.3",
+    "pg": "^8.3.3",
+    "yenv": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
